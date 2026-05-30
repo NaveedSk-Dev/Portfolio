@@ -192,10 +192,11 @@
 </div>
 </div>
 </div>
-<form class="glass contact-form reveal" onsubmit="event.preventDefault();alert('Message sent! (Demo only)');this.reset()">
-<label>Name <input type="text" required> </label>
-<label>Email <input type="email" required> </label>
-<label>Message <textarea required></textarea> </label>
+<form action="https://api.web3forms.com/submit" method="POST" class="glass contact-form reveal">
+<input type="hidden" name="access_key" value="835277e8-6cc8-4fb3-9b4b-08b03a1bb434">
+<input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
 <button type="submit" class="btn btn-primary" style="animation:none">Transmit Message</button>
 </form>
 </div>
